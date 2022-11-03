@@ -3,7 +3,7 @@ extends layout
 block content
   h1= title
   p Levis California
-  button(type="button",onclick="update()" class="btn btn-success") Press Me
+  button(type="button",onclick="doBump()" class="btn btn-success") Press Me
   div(id="bump") 
     i Bump the count
   script. 
@@ -14,4 +14,4 @@ block content
       bump = bump + 1;
       document.getElementById("bump").innerHTML="Count "+count+" with bump "+bump;
     }
-     a(href="liguid") Info about liquidmeals
+     
