@@ -6,3 +6,13 @@ block content
   button(type="button",onclick="dobump()" class="btn btn-success") Press Me
   div(id="bump") 
     i Bump the count
+     script. 
+    var count = 0;
+    var bump = 1;
+    function doBump(){
+  count = count + bump;
+  bump = bump + 1;
+  document.getElementById("bump").innerHTML=" Count "+count+" with bump "+bump;
+ }
+ a(href="liquid") Info about liquid meals
+
